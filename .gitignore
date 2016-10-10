@@ -1,1 +1,25 @@
+# Temporary files #
 .DS_Store
+*.pyc
+*.swp
+*.swo
+*~
+\#*
+.#*
+._*
+~$*
+.~lock*
+
+# Latex #
+*.aux
+*.bbl
+*.blg
+*.log
+*.synctex.gz
+*.ps
+*.dvi
+*.out
+.*.lb
+*.maf
+*.mtc
+*.toc
