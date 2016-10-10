@@ -1,16 +1,15 @@
 Guidelines
 
 This first exercise is intended as a repetition of what you have already learned during the code academy exercises. You will use the ipython interpreter and a text editor of your choice. We recommend using sublime as your text editor which can be downloaded from https://www.sublimetext.com. Prerequisites are that you have ipython and your text editor of choice installed and are able to open them.
-The answers to these exercises are to be written in Python v2.7. Due to the time limits of the teachers, there will be no hand-ins or correction on the code. Heavily detailed code will be published at the end of Tuesday. Still, specifically indicated questions that test your understanding of the problems should be handed in no later than 12.00 on Tuesday. The questions which should be answered in the hand in are indicated by a '%%' We hope you have fun solving the problems !
+
+The answers to these exercises are to be written in Python v2.7.x Due to the time limits of the teachers, there will be no hand-ins or correction on the code. Heavily detailed code will be published at the end of Tuesday. Still, specifically indicated questions that test your understanding of the problems should be handed in no later than 12h00 on Tuesday. The questions which should be answered in the hand-in are indicated by a '%%' We hope you have fun solving the problems!
 
 Do not hesitate to put comments along your code to understand its behavior.
 
 
-The exercise was developed by Lucas Sinclair and Alexander Eiler while working for Envonautics AB.
-
 ###### Exercise 1 ###############################################
 
-Assume s is a string of lower case characters.
+Assume `my_string` is a string of lower case characters.
 
 Write a program that counts up the number of vowels contained in the string s. Valid vowels are: 'a', 'e', 'i', 'o', and 'u'. For example, if s = 'azcbobobegghakl'
 
@@ -20,41 +19,44 @@ Assume a number is included in the string. Write a check and print a warning.
 
 Make this a function.
 
+
 ###### Exercise 2 ###############################################
 
 Convert the following into code that uses a while loop.
 
 print 2
-prints 4
-prints 6
-prints 8
-prints 10
-prints Goodbye!
+print 4
+print 6
+print 8
+print 10
+print Goodbye!
 
 
 ###### Exercise 3 ###############################################
 
-Convert the above output into code that uses a for loop.
+Convert the above output into code that uses a for loop. Convert
+
+
 
 ##### %% Exercise 4 ##############################################
 
 Try to answer the questions without running the code. Check your answers, by running the code. You'll learn the most this way, by figuring things out, instead of just running the code and reading off the answers. Hand in your answers!
 
 # the code
-myStr = '6.00x'
+my_str = '6.00x'
 
-for char in myStr:
+for char in my_str:
     print(char)
 
 print('done')
 
 #############
 
-How many times does 6 print out?
-How many times does . print out?
-How many times does 0 print out?
-How many times does x print out?
-How many times does done print out?
+How many times is "6" printed out?
+How many times is "." printed out?
+How many times is "0" printed out?
+How many times is "x" printed out?
+How many times is "done" printed out?
 
 #####################################
 # the code
@@ -64,73 +66,77 @@ count = 0
 for letter in greeting:
     count += 1
     if count % 2 == 0:
-        print(letter)
-    print(letter)
+        print letter
+    print letter
 
-print('done')
+print 'done'
 
 #############
 
-How many times does H print out?
-How many times does e print out? Disregard the letters in the word done.
-How many times does l print out?
-How many times does o print out? Disregard the letters in the word done.
-How many times does ! print out?
-How many times does done print out?
+How many times is H print out?
+How many times is e print out? Disregard the letters in the word done.
+How many times is l print out?
+How many times is o print out? Disregard the letters in the word done.
+How many times is ! print out?
+How many times is done print out?
 
 #####################################
 # the code
 school = 'uppsala'
-numVowels = 0
-numCons = 0
+num_vowels = 0
+num_cons = 0
 
 for char in school:
     if char == 'a' or char == 'e' or char == 'i' \
        or char == 'o' or char == 'u':
-        numVowels += 1
+        num_vowels += 1
     elif char == 'u' or char == 'p':
-        print(char)
+        print char
     else:
-        numCons -= 1
+        num_cons -= 1
 
-print('numVowels is: ' + str(numVowels))
-print('numCons is: ' + str(numCons))
+print('num_vowels is: ' + str(num_vowels))
+print('num_cons is: ' + str(num_cons))
 
 ##############
 
-How many times does p print out?
-How many times does o print out?
-What will the value of the variable numVowels be?
-What will the value of the variable numCons be?
+How many times is "p" printed out?
+How many times is "o" printed out?
+What will the value of the variable "num_vowels" be?
+What will the value of the variable "num_cons" be?
 
-##Exercise 5 ################################################################
 
-Assume s is a string of lower case characters.
 
-Write a program that prints the number of times the string 'bob' occurs in s.
-For example, if s = 'azcbobobegghakl', then your program should print.
+###### Exercise 5 ###############################################
+
+Assume "s" is a string of lower case characters.
+
+Write a program that prints the number of times the string "bob" occurs in "s".
+For example, if s = 'azcbobobegghakl', then your program should print "2".
 You could also assume that you look for a specific short sequence in a fasta file (i.e. DNA sequence).
 Do not use python libraries, even though it might be tempting!
 
 
 
 
-####Exercise 6 #######################################################
+###### Exercise 6 ###############################################
 
 Next, write a program that prints the longest substring of s in which the letters occur in alphabetical order. For example, if s = 'azcbobobegghakl', then your program should print
 
 Longest substring in alphabetical order is: beggh
 
-HINT: in python "a"<"b" the same way than 1<2
+HINT: in python "a" < "b" the same way than 1 < 2
 
-######Exercise 7##########################################################################
 
-How would you write the last example (Exercice as functions providing the user with the option to use whatever string and substring?
+
+###### Exercise 7 ###############################################
+
+How would you write the last example (Exercise as functions providing the user with the option to use whatever string and substring?
 
 
 ########################### optional exercise 1 #########################################
 
-The greatest common divisor of two positive integers is the largest integer that divides each of them without remainder. For example,
+The greatest common divisor of two positive integers is the largest integer that divides each of them without remainder. For example:
 
 gcd(2, 12) = 2
 
@@ -140,9 +146,9 @@ gcd(9, 12) = 3
 
 gcd(17, 12) = 1
 
-Write an iterative function, gcdIter(a, b), that implements this idea. One easy way to do this is to begin with a test value equal to the smaller of the two input arguments, and iteratively reduce this test value by 1 until you either reach a case where the test divides both a and b without remainder, or you reach 1.
+Write an iterative function, gcd_iter(a, b), that implements this idea. One easy way to do this is to begin with a test value equal to the smaller of the two input arguments, and iteratively reduce this test value by 1 until you either reach a case where the test divides both a and b without remainder, or you reach 1.
 
-After you have written the code using a iterative approach. Lets do the same using a recursive approach.
+After you have written the code using a iterative approach, let's do the same using a recursive approach.
 
 Here a little advice. A clever mathematical trick (due to Euclid) makes it easy to find greatest common divisors. Suppose that a and b are two positive integers:
 
@@ -152,6 +158,6 @@ Otherwise, gcd(a, b) is the same as gcd(b, a % b)
 
 See this website for an example of Euclid's algorithm (https://en.wikipedia.org/wiki/Euclidean_algorithm#Worked_example) being used to find the gcd.
 
-Write a function gcdRecur(a, b) that implements this idea recursively. This function takes in two positive integers and returns one integer.
+Write a function gcd_recur(a, b) that implements this idea recursively. This function takes in two positive integers and returns one integer.
 
 
