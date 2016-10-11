@@ -131,7 +131,7 @@ HINT: in python "a" < "b" the same way than 1 < 2
 
 ###### Exercise 7 ###############################################
 
-How would you write the last example (Exercise as functions providing the user with the option to use whatever string and substring?
+How would you write Exercise 5 as functions providing the user with the option to use whatever string and substring?
 
 
 ########################### optional exercise 1 #########################################
