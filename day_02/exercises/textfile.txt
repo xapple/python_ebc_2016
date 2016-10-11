@@ -1,0 +1,6 @@
+Preparation of the exercise for the
+sys module is almost done
+
+The test file is nearly done
+just a few more lines
+and with that I should be done
