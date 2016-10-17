@@ -1,5 +1,9 @@
+#!/usr/bin/env python
+
 """
-Exercise day 4 instructions.
+Python course EBC 2016
+Day 4 - Exercise instructions
+Lucas Sinclair <lucas.sinclair@me.com>
 
 * Write a program in a file called "exercise_day4.py"
 * You have until the start of the next course at 13h00 tomorrow to finish it.
